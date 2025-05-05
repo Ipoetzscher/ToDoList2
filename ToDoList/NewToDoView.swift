@@ -13,12 +13,12 @@ struct NewToDoView: View {
             Text("Task title:")
                 .font(.title)
                 .fontWeight(.bold)
-            TextField("Enter the task description...", text: Value)
+            TextField("Enter the task description...", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                     .padding()
                 .background(Color(.systemGroupedBackground))
                 .cornerRadius(15)
                   .padding()
-            Toggle(isOn: Is On) {
+            Toggle(isOn: <#T##Binding<Bool>#>) {
                 Text("Is it important?")
             }
             Button {
